@@ -1,0 +1,95 @@
+/* Registration.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  width: 90%; /* Adjust to fit more space but leave some margin */
+  max-width: 500px; /* Ensure it doesn't exceed this width */
+  padding: 20px; /* Reduced padding for a more compact form */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 300px;
+  margin: 0; /* Remove default margins */
+}
+
+.login-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+textarea {
+  resize: none; /* Prevent resizing */
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+    width: 95%; /* Adjust width for smaller screens */
+  }
+}

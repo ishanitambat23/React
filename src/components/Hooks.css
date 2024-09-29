@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container for the Short Circuit Evaluation component */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f0f4f8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Specific styling for short-container */
+  .short-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  /* Styling for h1 */
+  h1 {
+    font-size: 3rem; /* Larger for better visibility */
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: 700; /* Bold heading */
+  }
+  
+  /* Paragraph styling */
+  p {
+    font-size: 1.6rem; /* Adequate size for visibility */
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  /* Flexbox for buttons to arrange horizontally */
+  .button-box {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    width: 100%; /* Ensure the container takes full width */
+    max-width: 800px; /* Set a max width for larger screens */
+    padding: 0 2rem; /* Adding padding for alignment */
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #000; /* Black button background */
+    color: white;
+    border: none;
+    padding: 1rem 2rem; /* Larger padding for more presence */
+    border-radius: 0.5rem; /* Slightly rounded corners */
+    font-size: 1.4rem; /* Larger font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 60%; /* Ensure buttons take full width within their container */
+    max-width: 100px; /* Ensure each button has the same width */
+    height: 60px; /* Set a fixed height for uniformity */
+  }
+  
+  button:hover {
+    background-color: #333; /* Slightly lighter on hover */
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+  /* Additional styling for responsiveness */
+  @media (max-width: 768px) {
+    .button-box {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+      align-items: center; /* Center buttons when stacked */
+    }
+  
+    button {
+      font-size: 1.2rem;
+      padding: 1rem 1.5rem;
+    }
+  }
+  
